@@ -11,6 +11,9 @@ public class Uniq {
     private BufferedReader in;
 
     public Uniq(boolean numFlag, boolean uniStr, boolean ignoreCase, int numIgnoreSym, String outputFile, String inputFile) {
+        setFlags(numFlag, uniStr, ignoreCase, numIgnoreSym, outputFile, inputFile);
+    }
+    public void setFlags(boolean numFlag, boolean uniStr, boolean ignoreCase, int numIgnoreSym, String outputFile, String inputFile) {
         this.numFlag = numFlag;
         this.uniStr = uniStr;
         this.ignoreCase = ignoreCase;
@@ -45,7 +48,7 @@ public class Uniq {
         }
     }
 
-    public void launch() {
+    public void start() {
             String line = read();
             String nextLine;
             String lineTemp;

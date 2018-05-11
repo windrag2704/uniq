@@ -33,7 +33,7 @@ public class Main {
             System.err.println(e.getMessage());
         }
         Uniq uniq = new Uniq(numFlag, uniStr, ignoreCase, numIgnoreSym, outputFile, inputFile);
-        uniq.launch();
+        uniq.start();
 
     }
 }
